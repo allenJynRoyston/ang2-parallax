@@ -43,7 +43,8 @@ export class componentName { }
 
 ### NPM / Bower
 ```
-npm install ang2-parallax --save-dev
+npm install ang2-parallax --save
+bower install ang2-parallax --save
 ```
 
 
