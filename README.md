@@ -33,8 +33,6 @@ export class componentName { }
 ### Version
 1.0.0
 
-### Updates
-
 
 ### Live Demo 
 [Check it out](https://ng2-parallax-demo.herokuapp.com/ "ng2 Parallax Demo")
