@@ -10,21 +10,23 @@ An easy way to implement parallax scrolling for Angular2 components.  (There's a
 
 ### Usage
 ```
-<div parallax speed="5" src-"path/to/image.jpg"></div>
+<div style='width: 200; height: 200px'>
+  <div parallax speed="5" src-"path/to/image.jpg"></div>
+</div>
 ```
 
 ### Version
-1.1.2
+1.0.0
 
 ### Updates
- - v1.1.2 - Eliminated jankiness when using Macbook touchpads and touchscreens.
+
 
 ### Live Demo 
-[Check it out](https://allenroyston.herokuapp.com/access/ng-parallax/index.html "Title")
+[Check it out](https://ng2-parallax-demo.herokuapp.com/ "ng2 Parallax Demo")
 
 
 ### Dependencies
-- None!  (Other than AngularJS).
+- None!
 
 ### NPM / Bower
 <code>
@@ -37,30 +39,32 @@ bower install ng-simple-parallax --save
 
 ### Installation
 Include the module in your scripts.<br>
-<code>
-&lt;script src="./js/ngParallax.min.js"&gt; &lt;script&gt;
-</code>
+```
 
-Add ngParallax in your apps dependencies.<br> 
-<code>
-var app = angular.module('myApp', ['ngParallax']);
-</code>
+import { Component } from '@angular/core';
+import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
 
+@Component({
+  selector: 'my-component',
+  directives: [ng2Parallax],
+  template:`
+  
+  <div style='width: 200; height: 200px'>
+    <div parallax speed="5" src-"path/to/image.jpg"></div>
+  </div>
+  
+  `
+})
+export class componentName { }
+
+```
 
 ### Parameters
-<code>
-&lt;div ng-parallax pattern="'imageLocation'" speed="[0-3]" reverse="[true/false]"&gt; &lt; /div&gt; 
-</code>
-<br><br>
-speed: 0-3              (slowest to fastest)<br>
+```
+speed = 0 to xx (the higher the number, the slower the effect).  This part requires some tinkering since different image sizes will respond differently.
 
-<ul>
- <li>Setting the speed at 0 will lock the image in place.</li>
- <li> ... unless it's iOS, in which case the image will act as a static image and scroll naturally.</li>
- <li>Using negative numbers reverses the direction.</li>  
- <li>The speed is directly related to the image size, so tinker with your speed to get the right effect.</li>
-</ul>
-
+src = path to image
+```
 
 License
 ----
