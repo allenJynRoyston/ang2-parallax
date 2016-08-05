@@ -6,13 +6,12 @@ An easy way to implement parallax scrolling for Angular2 components.  (There's a
   - Responsive
   - Simple
   - Works for mobile!  (Well, iPhones at least - haven't tested on an Android yet)
-  - Tiny (only 292B)
-
+  - Tiny
 
 ### Usage
-<code>
-&lt;div ng-parallax pattern="myPattern" speed="0"&gt; &lt; /div&gt; 
-</code>
+```
+<div parallax speed="5" src-"path/to/image.jpg"></div>
+```
 
 ### Version
 1.1.2
