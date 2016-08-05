@@ -8,7 +8,7 @@ declare var window:any;
 export class ng2Parallax implements OnInit {
   @Input('speed') speed:any;
   @Input('src') src:any;
-  @Input('reverse') reverse:any;
+
 
   public element:any;
 
