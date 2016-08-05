@@ -21,7 +21,7 @@ import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
   template:`
   
   <div style='width: 200; height: 200px'>
-    <div parallax speed="5" src-"path/to/image.jpg"></div>
+    <div parallax speed="5" src="path/to/image.jpg"></div>
   </div>
   
   `
