@@ -8,11 +8,26 @@ An easy way to implement parallax scrolling for Angular2 components.  (There's a
   - Works for mobile!  (Well, iPhones at least - haven't tested on an Android yet)
   - Tiny
 
-### Usage
+### Installation
+Include the module in your scripts.<br>
 ```
-<div style='width: 200; height: 200px'>
-  <div parallax speed="5" src-"path/to/image.jpg"></div>
-</div>
+
+import { Component } from '@angular/core';
+import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
+
+@Component({
+  selector: 'my-component',
+  directives: [ng2Parallax],
+  template:`
+  
+  <div style='width: 200; height: 200px'>
+    <div parallax speed="5" src-"path/to/image.jpg"></div>
+  </div>
+  
+  `
+})
+export class componentName { }
+
 ```
 
 ### Version
@@ -37,27 +52,7 @@ npm install ng-parallax --save-dev
 bower install ng-simple-parallax --save
 </code>
 
-### Installation
-Include the module in your scripts.<br>
-```
 
-import { Component } from '@angular/core';
-import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
-
-@Component({
-  selector: 'my-component',
-  directives: [ng2Parallax],
-  template:`
-  
-  <div style='width: 200; height: 200px'>
-    <div parallax speed="5" src-"path/to/image.jpg"></div>
-  </div>
-  
-  `
-})
-export class componentName { }
-
-```
 
 ### Parameters
 ```
