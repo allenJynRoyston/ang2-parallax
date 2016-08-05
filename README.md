@@ -1,4 +1,4 @@
-# ng2-parallax
+# ang2-parallax
 
 ### What Am I?!
 An easy way to implement parallax scrolling for Angular2 components.  (There's also an [Angular 1.x](https://github.com/allenRoyston/ng-parallax "Angular 1.x") directive for those that need it.)
@@ -42,13 +42,10 @@ export class componentName { }
 - None!
 
 ### NPM / Bower
-<code>
-npm install ng-parallax --save-dev
-</code>
-<br>
-<code>
-bower install ng-simple-parallax --save
-</code>
+```
+npm install ang2-parallax --save-dev
+```
+
 
 
 
