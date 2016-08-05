@@ -1,0 +1,27 @@
+{
+  "name": "ang2-parallax",
+  "version": "1.0.1",
+  "description": "A parallax module built for Angular 2 components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenRoyston/ng2-parallax.git"
+  },
+  "keywords": [
+    "angular2",
+    "parallax",
+    "allen",
+    "royston",
+    "directive",
+    "scrolling"
+  ],
+  "author": "allen royston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allenRoyston/ng2-parallax/issues"
+  },
+  "homepage": "https://github.com/allenRoyston/ng2-parallax#readme"
+}
