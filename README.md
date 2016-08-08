@@ -9,11 +9,29 @@ An easy way to implement parallax scrolling for Angular2 components.  (There's a
   - Tiny
 
 ### Installation
-Include the module in your scripts.<br>
+First, alter your systemjs.config.js to include the right pathing.<br>
+```
+  var map = {
+    'app':                        'app', // 'dist',
+    '@angular':                   'node_modules/@angular',
+    'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
+    'rxjs':                       'node_modules/rxjs',
+    'NG2_parallax':               'node_modules/ang2-parallax'
+  };
+  
+  var packages = {
+    'app':                        { main: 'main.js',  defaultExtension: 'js' },
+    'rxjs':                       { defaultExtension: 'js' },
+    'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    'NG2_parallax':               { defaultExtension: 'js' }
+  };
+
+```
+Then include the module in your scripts.<br>
 ```
 
 import { Component } from '@angular/core';
-import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
+import { ng2Parallax  } from '../../../node_modules/ang2-parallax/ng2parallax';
 
 @Component({
   selector: 'my-component',
