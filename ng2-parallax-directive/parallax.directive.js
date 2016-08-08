@@ -9,11 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ng2Parallax = (function () {
-    function ng2Parallax(el) {
+var ng2parallax = (function () {
+    function ng2parallax(el) {
         this.element = el.nativeElement;
     }
-    ng2Parallax.prototype.ngOnInit = function () {
+    ng2parallax.prototype.ngOnInit = function () {
         var t = this, _img = t.src, _speed = t.speed;
         window.mobileAndTabletcheck = function () {
             var check = false;
@@ -58,22 +58,18 @@ var ng2Parallax = (function () {
     __decorate([
         core_1.Input('speed'), 
         __metadata('design:type', Object)
-    ], ng2Parallax.prototype, "speed", void 0);
+    ], ng2parallax.prototype, "speed", void 0);
     __decorate([
         core_1.Input('src'), 
         __metadata('design:type', Object)
-    ], ng2Parallax.prototype, "src", void 0);
-    __decorate([
-        core_1.Input('reverse'), 
-        __metadata('design:type', Object)
-    ], ng2Parallax.prototype, "reverse", void 0);
-    ng2Parallax = __decorate([
+    ], ng2parallax.prototype, "src", void 0);
+    ng2parallax = __decorate([
         core_1.Directive({
             selector: '[parallax]',
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])
-    ], ng2Parallax);
-    return ng2Parallax;
+    ], ng2parallax);
+    return ng2parallax;
 }());
-exports.ng2Parallax = ng2Parallax;
+exports.ng2parallax = ng2parallax;
 //# sourceMappingURL=parallax.directive.js.map

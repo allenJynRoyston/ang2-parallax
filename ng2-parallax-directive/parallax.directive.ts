@@ -5,7 +5,7 @@ declare var window:any;
 @Directive({
   selector: '[parallax]',
 })
-export class ng2Parallax implements OnInit {
+export class ng2parallax implements OnInit {
   @Input('speed') speed:any;
   @Input('src') src:any;
 
