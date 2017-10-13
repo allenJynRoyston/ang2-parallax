@@ -34,7 +34,7 @@ export class ng2parallax implements OnInit {
         bgObj.style.height = "100%";
         bgObj.style.margin = "0 auto"
         bgObj.style.position = "relative"
-        bgObj.style.background = "url(" + _img + ")"
+        bgObj.style.backgroundImage = "url(" + _img + ")"
         bgObj.style.backgroundAttachment = 'fixed';
     var isMobile = window.mobileAndTabletcheck();
 
